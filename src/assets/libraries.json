@@ -1,0 +1,22 @@
+[
+  {
+    "description": "The pulsating heart of Queelag, contains everything necessary to write clean typescript code.\n\nForget about nesting, redundancy and useless variables declarations.",
+    "name": "core",
+    "tags": ["typescript"]
+  },
+  {
+    "description": "The ultimate foundation for react development, stop writing the same code over and over again.\n\nThis library contains everything from common UI enums to fully fledged component stores to handle all the logic you could think of.",
+    "name": "react-core",
+    "tags": ["react", "typescript"]
+  },
+  {
+    "description": "Beautiful and easy to use feather icon components, they are based on the Icon component of react-core and have a lot under the hood that makes them extremely powerful and scalable.\n\nThis project also serves as an extremely versatile base for any other icon package you wish to build.",
+    "name": "react-feather-icons",
+    "tags": ["feather", "react", "typescript"]
+  },
+  {
+    "description": "This is probably the most ambitious project here, it's a set of primitives for building ARIA compliant react components.\n\nEverything's already handled on the logic side and the only thing you have to build is the UI, which thanks to the way these primitives connect with each other makes it a breeze.",
+    "name": "react-aria",
+    "tags": ["aria", "react", "typescript"]
+  }
+]
