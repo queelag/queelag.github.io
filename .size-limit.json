@@ -1,10 +1,10 @@
 [
   {
     "name": "core",
-    "path": ["dist/index.html", "dist/main.*.css", "dist/main.*.js", "dist/vendors.*.js"]
+    "path": ["docs/index.html", "docs/main.*.css", "docs/main.*.js", "docs/vendors.*.js"]
   },
   {
     "name": "chunks",
-    "path": "dist/chunks/*.js"
+    "path": "docs/chunks/*.js"
   }
 ]

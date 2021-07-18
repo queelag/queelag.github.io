@@ -93,7 +93,7 @@ module.exports = {
     chunkFilename: 'chunks/[name].[chunkhash].js',
     clean: true,
     filename: '[name].[fullhash].js',
-    path: path.resolve(__dirname, './dist'),
+    path: path.resolve(__dirname, './docs'),
     publicPath: '/'
   },
   performance: {
