@@ -20,7 +20,7 @@ module.exports = {
   module: {
     rules: [
       {
-        exclude: /node_modules\/core-js/,
+        exclude: /node_modules/,
         test: /\.[jt]sx?$/i,
         use: {
           loader: 'babel-loader',
@@ -32,7 +32,7 @@ module.exports = {
                 {
                   corejs: 3,
                   targets: BROWSERS,
-                  useBuiltIns: 'usage'
+                  useBuiltIns: 'entry'
                 }
               ],
               '@babel/preset-react',
