@@ -10,7 +10,7 @@ export function About() {
       <div className='flex flex-col space-y-8'>
         <div className='flex items-center gap-4'>
           <m.div animate={{ opacity: 1, rotate: 0, scale: 1 }} initial={{ opacity: 0, rotate: -90, scale: 0.5 }}>
-            <Image shape={Shape.SQUIRCLE} size={48} source={require('../assets/logo.jpg')} />
+            <Image alt='logo' className='bg-lime-800' shape={Shape.SQUIRCLE} size={48} source={require('../assets/logo.jpg')} />
           </m.div>
           <AnimatedSpan className='text-2xl text-white'>Queelag</AnimatedSpan>
         </div>
