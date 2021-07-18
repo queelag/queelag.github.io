@@ -27,17 +27,18 @@ module.exports = {
           options: {
             plugins: [isDevelopment && ReactRefresh].filter(Boolean),
             presets: [
-              // [
-              //   '@babel/preset-env',
-              //   {
-              //     corejs: '3.15.2',
-              //     targets: BROWSERS,
-              //     useBuiltIns: 'usage'
-              //   }
-              // ],
+              [
+                '@babel/preset-env',
+                {
+                  corejs: 3,
+                  targets: BROWSERS,
+                  useBuiltIns: 'usage'
+                }
+              ],
               '@babel/preset-react',
               '@babel/preset-typescript'
-            ]
+            ],
+            sourceType: 'unambiguous'
           }
         }
       },
@@ -81,16 +82,14 @@ module.exports = {
     minimizer: ['...', isProduction && new CssMinimizerPlugin()].filter(Boolean),
     splitChunks: {
       cacheGroups: {
-        vendor: {
-          chunks: 'all',
-          name: 'vendors',
-          test: /node_modules/
+        defaultVendors: {
+          filename: 'chunks/[name].[chunkhash].js'
         }
-      }
+      },
+      chunks: 'all'
     }
   },
   output: {
-    chunkFilename: 'chunks/[name].[chunkhash].js',
     clean: true,
     filename: '[name].[fullhash].js',
     path: path.resolve(__dirname, './docs'),

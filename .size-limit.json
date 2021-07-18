@@ -1,10 +1,14 @@
 [
   {
     "name": "core",
-    "path": ["docs/index.html", "docs/main.*.css", "docs/main.*.js", "docs/vendors.*.js"]
+    "path": ["docs/index.html", "docs/main.*.css", "docs/main.*.js"]
   },
   {
     "name": "chunks",
     "path": "docs/chunks/*.js"
+  },
+  {
+    "name": "assets",
+    "path": "docs/assets/*"
   }
 ]

@@ -4,7 +4,8 @@ export class Dummy {
   static get library(): Library {
     return {
       description: '',
-      name: ''
+      name: '',
+      tags: []
     }
   }
 }

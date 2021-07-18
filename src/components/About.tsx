@@ -4,7 +4,7 @@ import React from 'react'
 import { AnimatedSpan } from '../components/AnimatedSpan'
 import { MadeBy } from './MadeBy'
 
-export function About() {
+export default function About() {
   return (
     <div className='h-full flex flex-col justify-between space-y-8'>
       <div className='flex flex-col space-y-8'>

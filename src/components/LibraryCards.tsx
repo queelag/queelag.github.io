@@ -8,7 +8,7 @@ import { Dummy } from '../modules/dummy'
 import { LibraryModal } from './LibraryModal'
 import { LibrarySharedCard } from './LibrarySharedCard'
 
-export function LibraryCards() {
+export default function LibraryCards() {
   const [selected, setSelected] = useState<Library>(Dummy.library)
   const modalState = useState<boolean>(false)
 
