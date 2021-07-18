@@ -25,7 +25,7 @@ export function Button(props: ButtonProps) {
       style={{ ...props.style, ...ShapeUtils.findStyle(store.shape, 40) }}
     >
       {props.icon && <props.icon size={store.isShapeRectangle ? 12 : 16} thickness={2} />}
-      {props.title && <span className='uppercase text-sm font-bold'>{props.title}</span>}
+      {props.title && <span className='uppercase text-sm'>{props.title}</span>}
     </button>
   )
 }

@@ -20,21 +20,21 @@ module.exports = {
   module: {
     rules: [
       {
-        exclude: /(node_modules|core|react-core|react-feather-icons)/,
+        exclude: /node_modules\/core-js/,
         test: /\.[jt]sx?$/i,
         use: {
           loader: 'babel-loader',
           options: {
             plugins: [isDevelopment && ReactRefresh].filter(Boolean),
             presets: [
-              [
-                '@babel/preset-env',
-                {
-                  corejs: '3.15.2',
-                  targets: BROWSERS,
-                  useBuiltIns: 'usage'
-                }
-              ],
+              // [
+              //   '@babel/preset-env',
+              //   {
+              //     corejs: '3.15.2',
+              //     targets: BROWSERS,
+              //     useBuiltIns: 'usage'
+              //   }
+              // ],
               '@babel/preset-react',
               '@babel/preset-typescript'
             ]
