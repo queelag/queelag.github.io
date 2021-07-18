@@ -1,6 +1,6 @@
+import { ObjectUtils, ReactUtils } from '@queelag/core'
 import { TagProps, TagStore, TAG_PROPS_KEYS, useForceUpdate } from '@queelag/react-core'
 import React, { useMemo } from 'react'
-import { ObjectUtils, ReactUtils } from '../../../core/dist'
 
 export function Tag(props: TagProps) {
   const update = useForceUpdate()

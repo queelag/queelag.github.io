@@ -1,6 +1,6 @@
+import { Backdrop } from '@queelag/react-core'
 import { AnimatePresence, AnimateSharedLayout, m } from 'framer-motion'
 import React, { Fragment, useState } from 'react'
-import { Backdrop } from '../../../react-core/dist'
 import libraries from '../assets/libraries.json'
 import { LibraryCard } from '../components/LibraryCard'
 import { Library } from '../definitions/types'

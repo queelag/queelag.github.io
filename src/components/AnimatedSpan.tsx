@@ -1,7 +1,7 @@
+import { ObjectUtils } from '@queelag/core'
 import { HTMLSpanProps } from '@queelag/react-core'
 import { m } from 'framer-motion'
 import React from 'react'
-import { ObjectUtils } from '../../../core/dist'
 
 interface Props extends Omit<HTMLSpanProps, 'children'> {
   children: string

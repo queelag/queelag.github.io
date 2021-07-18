@@ -1,6 +1,6 @@
+import { Image, Shape } from '@queelag/react-core'
 import { m } from 'framer-motion'
 import React from 'react'
-import { Image, Shape } from '../../../react-core/dist'
 import { AnimatedSpan } from '../components/AnimatedSpan'
 import { MadeBy } from './MadeBy'
 
