@@ -17,9 +17,9 @@ export function Button(props: ButtonProps) {
         store.isShapeRectangle && 'px-6 h-10',
         store.isShapeSquare && 'w-10 h-10',
         store.isShapeSquircle && 'w-10 h-10',
-        store.isTypeOutline && 'border border-gray-800 hover:bg-gray-900 focus:bg-gray-900 active:bg-gray-800 text-white',
-        store.isTypeSecondary && 'bg-black text-white hover:bg-gray-800 focus:bg-gray-800 active:bg-gray-700',
-        store.isTypePrimary && 'bg-fuchsia-500 hover:bg-fuchsia-600 focus:bg-fuchsia-600 active:bg-fuchsia-400 text-white'
+        store.isVariantOutline && 'border border-gray-800 hover:bg-gray-900 focus:bg-gray-900 active:bg-gray-800 text-white',
+        store.isVariantSecondary && 'bg-black text-white hover:bg-gray-800 focus:bg-gray-800 active:bg-gray-700',
+        store.isVariantPrimary && 'bg-fuchsia-500 hover:bg-fuchsia-600 focus:bg-fuchsia-600 active:bg-fuchsia-400 text-white'
       )}
       onClick={store.onClick}
       style={{ ...props.style, ...ShapeUtils.findStyle(store.shape, 40) }}

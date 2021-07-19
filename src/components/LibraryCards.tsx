@@ -3,9 +3,9 @@ import { AnimatePresence, AnimateSharedLayout, m } from 'framer-motion'
 import React, { Fragment, useState } from 'react'
 import libraries from '../assets/libraries.json'
 import { LibraryCard } from '../components/LibraryCard'
-import { Library } from '../definitions/types'
+import { Library } from '../definitions/interfaces'
 import { Dummy } from '../modules/dummy'
-import { LibraryModal } from './LibraryModal'
+import { LibraryDialog } from './LibraryDialog'
 import { LibrarySharedCard } from './LibrarySharedCard'
 
 export default function LibraryCards() {
@@ -59,7 +59,7 @@ export default function LibraryCards() {
       {libraries.map((v: Library, k: number) => (
         <LibraryCard {...v} key={v.name} onClick={() => onClick(v)} />
       ))}
-      <LibraryModal {...selected} state={modalState} />
+      <LibraryDialog {...selected} state={modalState} />
     </Fragment>
   )
 }

@@ -1,7 +1,7 @@
 import { AriaFocusTrap, Key } from '@queelag/react-aria'
 import { IconXSquare } from '@queelag/react-feather-icons'
 import React, { KeyboardEvent } from 'react'
-import { Library } from '../definitions/types'
+import { Library } from '../definitions/interfaces'
 import { LibraryCardFooter } from './LibraryCardFooter'
 
 interface Props extends Library {

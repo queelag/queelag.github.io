@@ -2,7 +2,7 @@ import { ObjectUtils, ReactUtils } from '@queelag/core'
 import { Key } from '@queelag/react-aria'
 import { HTMLButtonProps } from '@queelag/react-core'
 import React, { KeyboardEvent } from 'react'
-import { Library } from '../definitions/types'
+import { Library } from '../definitions/interfaces'
 import { Card } from './Card'
 import { Tag } from './Tag'
 
