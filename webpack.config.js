@@ -20,28 +20,32 @@ module.exports = {
   module: {
     rules: [
       {
-        exclude: /node_modules/,
-        test: /\.[jt]sx?$/i,
-        use: {
-          loader: 'babel-loader',
-          options: {
-            plugins: [isDevelopment && ReactRefresh].filter(Boolean),
-            presets: [
-              [
-                '@babel/preset-env',
-                {
-                  corejs: 3,
-                  targets: BROWSERS,
-                  useBuiltIns: 'entry'
-                }
-              ],
-              '@babel/preset-react',
-              '@babel/preset-typescript'
-            ],
-            sourceType: 'unambiguous'
-          }
-        }
+        test: /\.tsx?$/i,
+        loader: 'ts-loader'
       },
+      // {
+      //   exclude: /node_modules/,
+      //   test: /\.[jt]sx?$/i,
+      //   use: {
+      //     loader: 'babel-loader',
+      //     options: {
+      //       plugins: [isDevelopment && ReactRefresh].filter(Boolean),
+      //       presets: [
+      //         [
+      //           '@babel/preset-env',
+      //           {
+      //             corejs: 3,
+      //             targets: BROWSERS,
+      //             useBuiltIns: 'entry'
+      //           }
+      //         ],
+      //         '@babel/preset-react',
+      //         '@babel/preset-typescript'
+      //       ],
+      //       sourceType: 'unambiguous'
+      //     }
+      //   }
+      // },
       {
         test: /\.css$/i,
         use: [
