@@ -28,10 +28,12 @@
     "@types/react-dom": "^17.0.7",
     "babel-loader": "^8.2.2",
     "bundle-stats-webpack-plugin": "^3.0.1",
+    "copy-webpack-plugin": "^9.0.1",
     "core-js": "^3.15.2",
     "css-loader": "^6.2.0",
     "css-minimizer-webpack-plugin": "^3.0.1",
     "html-loader": "^2.1.2",
+    "html-webpack-inject-attributes-plugin": "^1.0.6",
     "html-webpack-plugin": "^5.3.2",
     "jest": "^27.0.4",
     "mini-css-extract-plugin": "^2.0.0",
@@ -45,7 +47,6 @@
     "superstruct": "^0.15.2",
     "tailwindcss": "2.2.4",
     "ts-jest": "^27.0.3",
-    "ts-loader": "^9.2.3",
     "typescript": "4.3.5",
     "webpack": "^5.38.1",
     "webpack-bundle-analyzer": "^4.4.2",
@@ -56,8 +57,8 @@
   "main": "index.js",
   "name": "mangadex-fe",
   "scripts": {
-    "build": "NODE_ENV=production webpack && yarn size-limit",
-    "start": "webpack serve --hot-only --history-api-fallback"
+    "build": "webpack -c webpack.production.js && webpack -c webpack.production.legacy.js && yarn size-limit",
+    "start": "webpack serve  -c webpack.development.js --hot-only --history-api-fallback"
   },
   "version": "1.0.0"
 }
