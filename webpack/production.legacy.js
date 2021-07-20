@@ -1,4 +1,5 @@
-const common = require('./webpack.production')
+const common = require('./production')
+const path = require('path')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 
 common.module.rules[0].use.options.presets[0][1].targets = 'defaults'
@@ -10,7 +11,7 @@ common.plugins[0] = new HtmlWebpackPlugin({
   attributes: {
     nomodule: (v) => (v.tagName === 'script' ? true : undefined)
   },
-  template: './docs/index.html'
+  template: path.resolve(__dirname, '../docs/index.html')
 })
 common.plugins = common.plugins.slice(0, 2)
 

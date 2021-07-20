@@ -1,9 +1,9 @@
-const common = require('./webpack.common')
+const common = require('./common')
+const path = require('path')
 const BundleStatsWebpackPlugin = require('bundle-stats-webpack-plugin').BundleStatsWebpackPlugin
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 const CssMinimizerPlugin = require('css-minimizer-webpack-plugin')
-const path = require('path')
 
 common.mode = 'production'
 common.module.rules[0].use.options.presets.unshift([
@@ -11,7 +11,7 @@ common.module.rules[0].use.options.presets.unshift([
   {
     corejs: 3,
     targets: 'supports es6-module and last 1 version',
-    useBuiltIns: 'entry'
+    useBuiltIns: 'usage'
   }
 ])
 common.module.rules[1].use[2].options.postcssOptions.plugins.push([
@@ -34,7 +34,7 @@ common.plugins.unshift(
     attributes: {
       type: (v) => (v.tagName === 'script' ? 'module' : undefined)
     },
-    template: './public/index.html'
+    template: path.resolve(__dirname, '../public/index.html')
   })
 )
 common.plugins.push(
@@ -46,9 +46,9 @@ common.plugins.push(
   })
 )
 common.resolve.alias = {
-  react: path.resolve(__dirname, './node_modules/preact/compat'),
-  'react-dom': path.resolve(__dirname, './node_modules/preact/compat'),
-  tslib: path.resolve(__dirname, './node_modules/tslib')
+  react: path.resolve(__dirname, '../node_modules/preact/compat'),
+  'react-dom': path.resolve(__dirname, '../node_modules/preact/compat'),
+  tslib: path.resolve(__dirname, '../node_modules/tslib')
 }
 
 module.exports = common

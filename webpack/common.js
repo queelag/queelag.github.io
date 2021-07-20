@@ -1,9 +1,9 @@
-const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 const path = require('path')
+const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 const HtmlWebpackInjectAttributesPlugin = require('html-webpack-inject-attributes-plugin')
 
 module.exports = {
-  entry: './src/index.tsx',
+  entry: path.resolve(__dirname, '../src/index.tsx'),
   module: {
     rules: [
       {
@@ -42,7 +42,7 @@ module.exports = {
   },
   output: {
     filename: '[name].[contenthash].mjs',
-    path: path.resolve(__dirname, './docs'),
+    path: path.resolve(__dirname, '../docs'),
     publicPath: '/'
   },
   plugins: [new HtmlWebpackInjectAttributesPlugin()],

@@ -4,8 +4,16 @@
     "path": ["docs/index.html", "docs/main.*.css", "docs/main.*.mjs"]
   },
   {
+    "name": "core:legacy",
+    "path": ["docs/index.html", "docs/main.*.css", "docs/main.*.js"]
+  },
+  {
     "name": "chunks",
     "path": "docs/chunks/*.mjs"
+  },
+  {
+    "name": "chunks:legacy",
+    "path": "docs/chunks/*.js"
   },
   {
     "name": "assets",
