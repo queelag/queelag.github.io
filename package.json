@@ -3,7 +3,7 @@
   "dependencies": {
     "@queelag/core": "^1.0.1",
     "@queelag/react-aria": "^1.0.3",
-    "@queelag/react-core": "^1.0.6",
+    "@queelag/react-core": "^1.0.7",
     "@queelag/react-feather-icons": "^1.0.4",
     "framer-motion": "^4.1.17",
     "mobx": "^6.3.2",

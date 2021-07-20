@@ -1305,10 +1305,10 @@
     "@popperjs/core" "^2.9.2"
     react-popper "^2.2.5"
 
-"@queelag/react-core@^1.0.6":
-  version "1.0.6"
-  resolved "https://npm.pkg.github.com/download/@queelag/react-core/1.0.6/86d61185cc8102d798247fa1a66e1eb19ab1c07cdfcf0fdccc6874c8ea3c4298#aad08430634e4f179972654891871e62aad6b741"
-  integrity sha512-gehkoaPm0fj1GaHmRgpvawDRC9h0mDqmmPbAV7o7YgEjMZIa8xa1bzIXdq3SOGjL6i1VeVt1q+q0scw3DXzwiQ==
+"@queelag/react-core@^1.0.7":
+  version "1.0.7"
+  resolved "https://npm.pkg.github.com/download/@queelag/react-core/1.0.7/3b574686a368c60f6fd55ad94a34aad905ac1267cce93c3f36a69f1f79ff47e2#178b0d6a14452ecb425da60ba9dfcd970356eb10"
+  integrity sha512-NULrhUaRiVAJG9PGO8nOfhvOZbQ0o7uTD6EdNmKHacuFtBdgJ7ymy+EqNJSUPSTynX+42fVRZYm9CfZwruSLIw==
   dependencies:
     react-window "^1.8.6"
     rfc4648 "^1.5.0"

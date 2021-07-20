@@ -1,11 +1,11 @@
 import { ReactUtils } from '@queelag/core'
 import { AriaDialog, AriaFocusTrap } from '@queelag/react-aria'
-import { Backdrop, DialogProps, HTMLDivProps } from '@queelag/react-core'
+import { Backdrop, DialogProps } from '@queelag/react-core'
 import { IconXSquare } from '@queelag/react-feather-icons'
 import { AnimatePresence, m } from 'framer-motion'
 import React from 'react'
 
-interface Props extends HTMLDivProps, Partial<DialogProps> {
+interface Props extends DialogProps {
   state: [boolean, (v: boolean) => void]
 }
 
