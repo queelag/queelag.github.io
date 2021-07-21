@@ -1,9 +1,9 @@
 {
   "author": "Dario Sechi",
   "dependencies": {
-    "@queelag/core": "^1.0.1",
+    "@queelag/core": "^1.0.2",
     "@queelag/react-aria": "^1.0.3",
-    "@queelag/react-core": "^1.0.7",
+    "@queelag/react-core": "^1.0.8",
     "@queelag/react-feather-icons": "^1.0.4",
     "framer-motion": "^4.1.17",
     "mobx": "^6.3.2",
@@ -49,7 +49,6 @@
     "ts-jest": "^27.0.3",
     "typescript": "4.3.5",
     "webpack": "^5.38.1",
-    "webpack-bundle-analyzer": "^4.4.2",
     "webpack-cli": "^4.7.2",
     "webpack-dev-server": "^3.11.2"
   },

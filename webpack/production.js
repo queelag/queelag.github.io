@@ -42,7 +42,8 @@ common.plugins.push(
     filename: '[name].[contenthash].css'
   }),
   new BundleStatsWebpackPlugin({
-    baseline: true
+    baseline: true,
+    compare: false
   })
 )
 common.resolve.alias = {
