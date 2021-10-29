@@ -1,12 +1,9 @@
-import { ObjectUtils, ReactUtils, StoreUtils } from '@queelag/core'
-import { ButtonProps, ButtonStore, BUTTON_PROPS_KEYS, BUTTON_STORE_KEYS, ShapeUtils, useForceUpdate } from '@queelag/react-core'
-import React, { useEffect, useMemo } from 'react'
+import { ObjectUtils } from '@queelag/core'
+import { ButtonProps, ButtonStore, BUTTON_PROPS_KEYS, BUTTON_STORE_KEYS, ReactUtils, ShapeUtils, useComponentStore } from '@queelag/react-core'
+import React from 'react'
 
 export function Button(props: ButtonProps) {
-  const update = useForceUpdate()
-  const store = useMemo(() => new ButtonStore({ ...props, update }), [])
-
-  useEffect(() => StoreUtils.updateKeys(store, props, BUTTON_STORE_KEYS), ObjectUtils.pickToArray(props, BUTTON_STORE_KEYS))
+  const store = useComponentStore(ButtonStore, props, BUTTON_STORE_KEYS, 'button')
 
   return (
     <button
@@ -17,7 +14,8 @@ export function Button(props: ButtonProps) {
         store.isShapeRectangle && 'px-6 h-10',
         store.isShapeSquare && 'w-10 h-10',
         store.isShapeSquircle && 'w-10 h-10',
-        store.isVariantOutline && 'border border-gray-800 hover:bg-gray-900 focus:bg-gray-900 active:bg-gray-800 text-white',
+        store.isVariantOutline &&
+          'border border-gray-200 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-800 focus:bg-gray-100 dark:focus:bg-gray-800 active:bg-gray-100 dark:active:bg-gray-700 dark:text-white',
         store.isVariantSecondary && 'bg-black text-white hover:bg-gray-800 focus:bg-gray-800 active:bg-gray-700',
         store.isVariantPrimary && 'bg-fuchsia-500 hover:bg-fuchsia-600 focus:bg-fuchsia-600 active:bg-fuchsia-400 text-white'
       )}

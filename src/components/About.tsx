@@ -12,7 +12,7 @@ export default function About() {
           <m.div animate={{ opacity: 1, rotate: 0, scale: 1 }} initial={{ opacity: 0, rotate: -90, scale: 0.5 }}>
             <Image alt='logo' className='bg-lime-800' shape={Shape.SQUIRCLE} size={48} source={require('../assets/logo.jpg')} />
           </m.div>
-          <AnimatedSpan className='text-2xl text-white'>Queelag</AnimatedSpan>
+          <AnimatedSpan className='text-2xl dark:text-white'>Queelag</AnimatedSpan>
         </div>
         <div>
           <m.span animate={{ opacity: 1 }} className='text-gray-400' initial={{ opacity: 0 }}>

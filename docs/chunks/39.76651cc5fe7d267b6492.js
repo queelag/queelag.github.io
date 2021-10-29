@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkmangadex_fe=self.webpackChunkmangadex_fe||[]).push([[39],{5039:(e,a,s)=>{s.r(a),s.d(a,{default:()=>f});const f=s(79).g}}]);
